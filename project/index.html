@@ -8,7 +8,7 @@
     <link rel="shortcut icon" type="image/ico" href="icon/favicon.ico"/> 
   <title>
     
-      Sophie writes code
+      Project | Sophie writes code
     
   </title>
   <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -107,33 +107,56 @@
   </div>
 </header>
 
-    <main class="app-body">
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2018/03/21/hello-world/">hello_world</a>
-      </h2>
-      <p class="article-date">March 21, 2018</p>
-      
-        
-  <a href="/tags#personal" >
-    <span class="tag-code">personal</span>
-  </a>
-
-      
-      <div class="article-summary">
-        
-          매번 들어가보는 블로그에 powered by hexo라고 써있어서 호기심에 한번 시작해봤다. 처음엔 뭐야 이거? 하다가 오 나쁘지 않아 오 신기해 오 이걸로 옮겨야겠다! 하고 생각이 들었다. 마음에 드는 테마도 찾아서 좋다. favicon이 신경쓰이고 아직 테마 ...
-        
-      </div>
-      <a class="more" href="/2018/03/21/hello-world/">Read more</a>
-    </article>
-  
-
-  
+    <div id="article-banner">
+  <h2>Projects</h2>
+  <p class="post-date">github repositories</p>
+</div>
+<main class="app-body project-app">
+  <div class="card-container" id="all-project"></div>
 </main>
-
-
+<script>
+  (function() {
+    var url = 'http://sophiedophie.github.io/project/index.html';
+    $('#article-banner').geopattern(url);
+    $('.header').removeClass('fixed-header')
+    $.ajax({
+      headers: {
+        Accept: 'application/vnd.github.v3.raw'
+      },
+      type: 'get',
+      url: 'https://api.github.com/users/sophiedophie/repos',
+      success: function (data) {
+        var repos = data.sort(function(a, b) {
+          return (b.stargazers_count - a.stargazers_count)
+        }).slice(0, 6)
+        var cardHtml = repos.map(function(item) {
+          var description = item.description || ""
+          if (description.replace(/[\u0391-\uFFE5]/g, "aa").length > 72) {
+            description = description.slice(0, 72) + '...'
+          }
+          return (
+            '<section class="project-card">' + 
+              '<a class="card-wrap" href="'+ item.html_url +'" target="_blank">' +
+                '<div class="card-header" data-name="'+ item.name +'"></div>' +
+                '<h3 class="card-title">' + item.name + '</h3>' +
+                '<p class="card-description">' + description + '</p>' +
+                '<div class="card-footer">' +
+                  '<span><i class="fa fa-star"></i>'+ item.stargazers_count +'</span>' +
+                  '<span><i class="fa fa-code-fork"></i>' + item.forks_count +'</span>' +
+                '</div>' +
+              '</a>' +
+            '</section>'
+          )
+        }).join('')
+        $('#all-project').html(cardHtml)
+        $('.card-header').each(function() {
+          var name = $(this).data('name');
+          $(this).geopattern(name);
+        })
+      }
+    });
+  })()
+</script>
     <div class="scroll-top">
   <span class="arrow-icon"></span>
 </div>

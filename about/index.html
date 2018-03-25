@@ -8,7 +8,7 @@
     <link rel="shortcut icon" type="image/ico" href="icon/favicon.ico"/> 
   <title>
     
-      Sophie writes code
+      About | Sophie writes code
     
   </title>
   <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -107,32 +107,56 @@
   </div>
 </header>
 
-    <main class="app-body">
+    <div id="about-banner" style="background-color: #F9FBE7"></div>
+<div class="author">
+  <div class="head">
+    <img src="https://avatars0.githubusercontent.com/u/31626996?s=400&u=9d2d9546fe0176824ef70a5d6cfa7fdbac14a78f&v=4" />
+  </div>
+  <h3>Seohee Kwon (Sophie)</h3>
   
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2018/03/21/hello-world/">hello_world</a>
-      </h2>
-      <p class="article-date">March 21, 2018</p>
-      
-        
-  <a href="/tags#personal" >
-    <span class="tag-code">personal</span>
-  </a>
-
-      
-      <div class="article-summary">
-        
-          매번 들어가보는 블로그에 powered by hexo라고 써있어서 호기심에 한번 시작해봤다. 처음엔 뭐야 이거? 하다가 오 나쁘지 않아 오 신기해 오 이걸로 옮겨야겠다! 하고 생각이 들었다. 마음에 드는 테마도 찾아서 좋다. favicon이 신경쓰이고 아직 테마 ...
-        
-      </div>
-      <a class="more" href="/2018/03/21/hello-world/">Read more</a>
-    </article>
+    <p class="description">dev, yoga, philosophy, tokyo, german, and whatever</p>
   
-
+  <section class="share-icons">
+    
+    
+      <a class="icon-twitter" href="https://twitter.com/sophieedophie" target="_blank">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+    
+    
+      <a class="icon-github" href="https://github.com/sophiedophie" target="_blank">
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+        </span>
+      </a>
+    
+    
+    
+  </section>
   
-</main>
+    <div style="margin-top: 30px;">
+      2016년 12월 신입 OJT로 구글 메인화면을 표방한 매우 심플한(?) 이커머스 사이트를 만들면서 개발을 시작했습니다. <br> 자바스크립트로 코딩 세계에 들어왔지만 파이썬과 스칼라에도 익숙해지고 싶습니다. <br> 데이터 관련 개발 부서에서 개발자가 되려고 노력하고 있습니다. <br> Working @ Tokyo, Aiming for world citizen
+    </div>
+  
+</div>
 
+<script>
+  (function () {
+    $('.header').removeClass('fixed-header')
+    var windowH = $(window).height();
+    var author = $('.author')
+    var bodyH = author.offset().top + author[0].offsetHeight + 71;
+    if (bodyH < windowH) {
+      author.css({
+        'margin-bottom': windowH - bodyH
+      })
+    }
+  })();
+</script>
 
     <div class="scroll-top">
   <span class="arrow-icon"></span>

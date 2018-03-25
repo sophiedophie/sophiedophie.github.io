@@ -5,8 +5,14 @@
     <entry>
       <title>hello_world</title>
       <link href="/2018/03/21/hello-world/"/>
-      <content type="html"><![CDATA[<p>hello world<br>I’m trying to figure out what’s going on</p><p>뭐지 이게<br>これはなんですか</p>]]></content>
+      <content type="html"><![CDATA[<p>매번 들어가보는 블로그에 powered by hexo라고 써있어서 호기심에 한번 시작해봤다. 처음엔 뭐야 이거? 하다가 오 나쁘지 않아 오 신기해 오 이걸로 옮겨야겠다! 하고 생각이 들었다. 마음에 드는 테마도 찾아서 좋다. favicon이 신경쓰이고 아직 테마 커스터마이징도 마치지 못했지만 앞으로 medium 대신에 여기에 삽질노트를 적어두어야겠다. 새로운 집을 찾은 것 마냥 신이 난다. 야호!<br><br><br>그런데 마크다운은 어떻게 움직이는 것이냐!</p>]]></content>
       
+      
+        <tags>
+            
+            <tag> personal </tag>
+            
+        </tags>
       
     </entry>
     
