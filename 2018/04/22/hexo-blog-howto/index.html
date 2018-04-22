@@ -8,7 +8,7 @@
     <link rel="shortcut icon" type="image/ico" href="https://sophiedophie.github.io/"/> 
   <title>
     
-      hello_world | Sophie writes code
+      hexo 블로그 사용법 | Sophie writes code
     
   </title>
   <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -108,8 +108,8 @@
 </header>
 
     <div id="article-banner">
-  <h2>hello_world</h2>
-  <p class="post-date">2018-03-21</p>
+  <h2>hexo 블로그 사용법</h2>
+  <p class="post-date">2018-04-22</p>
   <div class="arrow-down">
     <a href="javascript:;"></a>
   </div>
@@ -117,15 +117,22 @@
 <main class="app-body flex-box">
   <!-- Article START -->
   <article class="post-article">
-    <section class="markdown-content"><p>매번 들어가보는 블로그에 powered by hexo라고 써있어서 호기심에 한번 시작해봤다. 처음엔 뭐야 이거? 하다가 오 나쁘지 않아 오 신기해 오 이걸로 옮겨야겠다! 하고 생각이 들었다. 마음에 드는 테마도 찾아서 좋다. favicon이 신경쓰이고 아직 테마 커스터마이징도 마치지 못했지만 앞으로 medium 대신에 여기에 삽질노트를 적어두어야겠다. 새로운 집을 찾은 것 마냥 신이 난다. 야호!<br><br><br>그런데 마크다운은 어떻게 움직이는 것이냐!</p>
+    <section class="markdown-content"><p>한 달전 잠시 만져보고 또 한동안 쓰지 않으니 손에 익지 않아서, 다시 마크다운 문법도 연습하고 공부도 하는 겸 블로그 글을 쓰려고 한다. 그런데 어떻게 글을 발행하려고 하는 것 부터 이미 난관이다. 사람이 어디 적어두지를 않으면 찾고 또 찾고 시간을 낭비할 것을 알기에 생각난 김에 정리한다.</p>
+<p>/source 아래에 폴더들이 있고 각 폴더들은 블로그 디렉토리 구조와 같다.</p>
+<h2 id="new-directory"><a href="#new-directory" class="headerlink" title="new directory"></a>new directory</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo init $&#123;directory&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="new-post"><a href="#new-post" class="headerlink" title="new post"></a>new post</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo new post $&#123;postName&#125;</span><br></pre></td></tr></table></figure>
+<h2 id="check-on-local-server-listening-on-4000"><a href="#check-on-local-server-listening-on-4000" class="headerlink" title="check on local server (listening on 4000)"></a>check on local server (listening on 4000)</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo server</span><br></pre></td></tr></table></figure>
+<h2 id="deploy-to-github"><a href="#deploy-to-github" class="headerlink" title="deploy to github"></a>deploy to github</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo generate</span><br><span class="line">hexo deploy</span><br></pre></td></tr></table></figure>
+<p>또는,<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo g -d</span><br></pre></td></tr></table></figure></p>
+<p>우선 쓰면서 익숙해지면 더 추가해야지.</p>
 </section>
     <!-- Tags START -->
     
       <div class="tags">
         <span>Tags:</span>
         
-  <a href="/tags#personal" >
-    <span class="tag-code">personal</span>
+  <a href="/tags#hexo, blog, howto, dev" >
+    <span class="tag-code">hexo, blog, howto, dev</span>
   </a>
 
       </div>
@@ -136,13 +143,13 @@
   <div class="nav-container">
     <!-- reverse left and right to put prev and next in a more logic postition -->
     
-    
-      <a class="nav-right" href="/2018/04/22/hexo-blog-howto/">
+      <a class="nav-left" href="/2018/03/21/hello-world/">
+        <span class="nav-arrow">← </span>
         
-          hexo 블로그 사용법
+          hello_world
         
-        <span class="nav-arrow"> →</span>
       </a>
+    
     
   </div>
 
@@ -167,7 +174,7 @@
 
 <script>
   (function () {
-    var url = 'http://sophiedophie.github.io/2018/03/21/hello-world/';
+    var url = 'http://sophiedophie.github.io/2018/04/22/hexo-blog-howto/';
     var banner = ''
     if (banner !== '' && banner !== 'undefined' && banner !== 'null') {
       $('#article-banner').css({
@@ -223,7 +230,7 @@
     // var gitmentConfig = "sophiedophie";
     // if (gitmentConfig !== 'undefined') {
     //   var gitment = new Gitment({
-    //     id: "hello_world",
+    //     id: "hexo 블로그 사용법",
     //     owner: "sophiedophie",
     //     repo: "sophiedophie.github.io",
     //     oauth: {
