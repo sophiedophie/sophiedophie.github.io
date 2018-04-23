@@ -8,7 +8,7 @@
     <link rel="shortcut icon" type="image/ico" href="https://sophiedophie.github.io/"/> 
   <title>
     
-      Sophie writes code
+      Articles | Sophie writes code
     
   </title>
   <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
@@ -120,45 +120,29 @@
 </header>
 
     <div id="article-banner">
-  <h2>Archives</h2>
-  <p class="post-date">Archived journals</p>
+  <h2>Articles</h2>
+  <p class="post-date">Translated articles worthy to me</p>
 </div>
-<main class="app-body" id="archives">
-  
-  
-  
-    <section class="time-section">
-  <h1 class="section-year">
-    2018
-  </h1>
-  <div class="section-list">
-    
-    
-      <div class="section-list-item">
-        <a href="/2018/04/23/pyenv/" class="archive-title">pyenv how-to 정리</a>
-        <p class="archive-date">04-23</p>
-      </div>
-    
-      <div class="section-list-item">
-        <a href="/2018/04/22/hexo-blog-howto/" class="archive-title">hexo 블로그 사용법</a>
-        <p class="archive-date">04-22</p>
-      </div>
-    
-      <div class="section-list-item">
-        <a href="/2018/03/21/hello-world/" class="archive-title">hello_world</a>
-        <p class="archive-date">03-21</p>
-      </div>
+<main class="app-body">
+  <div id="tag-cloud">
     
   </div>
-</section>
   
 </main>
 
 <script>
   (function () {
-    var url = 'http://sophiedophie.github.io/tags/personal/index.html';
-    $('#article-banner').geopattern(url);
-    $('.header').removeClass('fixed-header');
+    var url = 'http://sophiedophie.github.io/articles/index.html'
+    $('#article-banner').geopattern(url)
+    $('.header').removeClass('fixed-header')
+
+    var tag = location.hash.replace('#', '')
+    if (tag) {
+      var tagId = "#tag-" + tag;
+      $("html, body").animate({
+        scrollTop: $(tagId).offset().top 
+      }, 400)
+    }
   })();
 </script>
     <div class="scroll-top">
