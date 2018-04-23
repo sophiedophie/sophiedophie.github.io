@@ -139,6 +139,14 @@
 <p>그 다음 2.7.14 버전을 이용한 새로운 환경 (버블)을 만든다. 위 경로에서 새로운 폴더가 추가된다.<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyenv virtualenv 2.7.14 $&#123;env_name&#125;</span><br></pre></td></tr></table></figure></p>
 <p>여기까지 한 다음에, 유저의 profile파일에 다음 사항을 추가한다.<br>(bashrc나 zshrc등.)<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">eval &quot;$(pyenv init -)&quot;</span><br><span class="line">eval &quot;$(pyenv virtualenv-init -)&quot;</span><br><span class="line"></span><br><span class="line"># update rc file</span><br><span class="line">source ~./zshrc</span><br></pre></td></tr></table></figure></p>
 <p>이제 드디어 환경 액티베이트!<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pyenv virtualenv $&#123;env_name&#125;</span><br></pre></td></tr></table></figure></p>
+<h2 id="pyenv-virtualenv-pyenv-virtualenv…-이게-다-뭐지"><a href="#pyenv-virtualenv-pyenv-virtualenv…-이게-다-뭐지" class="headerlink" title="pyenv, virtualenv, pyenv-virtualenv…. 이게 다 뭐지"></a>pyenv, virtualenv, pyenv-virtualenv…. 이게 다 뭐지</h2><ul>
+<li>virtualenv: python 라이브러리를 위한 독립된 python 환경 제공</li>
+<li>pyenv: 독립된 python 버전 사용을 위한 것</li>
+<li>pyenv-virtualenv: pyenv와 virtualenv를 동시에 사용할 수 있게 함.</li>
+<li>virtualenvwrapper: virtualenv의 확장판. 복수의 virtualenv 디렉토리를 만들 때 효과적.</li>
+<li>pyenv-virtualenvwrapper: pyenv를 위한 플러그인</li>
+<li>pipenv: Pipfile과 pip, virtualenv를 하나의 커맨드로 합침. virtualenv와 다른 점은 virtualenv는 ~/.local/share/virtualenvs/XXX 디렉토리에 들어가지만 pipenv는 작업 중인 디렉토리에 설치된다는 것.<br>pipenv를 사용하는 것을 강추한다고 한다. (출처: <a href="https://stackoverflow.com/a/41573588/8465298" target="_blank" rel="noopener">https://stackoverflow.com/a/41573588/8465298</a>)</li>
+</ul>
 <p>이제 까먹어도 다시 이 포스팅을 보면 된다!</p>
 </section>
     <!-- Tags START -->
@@ -165,6 +173,13 @@
         
       </a>
     
+    
+      <a class="nav-right" href="/2018/04/23/progressive-web-app-ios/">
+        
+          Progressive 웹 앱이 드디어 iOS에서도!
+        
+        <span class="nav-arrow"> →</span>
+      </a>
     
   </div>
 

@@ -119,93 +119,53 @@
   </div>
 </header>
 
-    <main class="app-body">
+    <div id="article-banner">
+  <h2>Archives</h2>
+  <p class="post-date">Archived journals</p>
+</div>
+<main class="app-body" id="archives">
   
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2018/04/23/progressive-web-app-ios/">Progressive 웹 앱이 드디어 iOS에서도!</a>
-      </h2>
-      <p class="article-date">April 23, 2018</p>
-      
-        
-  <a href="/tags#articles" >
-    <span class="tag-code">articles</span>
-  </a>
-
-      
-      <div class="article-summary">
-        
-          Articles 섹션에서는 영어공부 &amp; 정보 습득을 위해 저에게 필요한 글들을 번역해서 공유합니다.혹시 문제가 된다면 저에게 연락해주세요! seohee.sophie.kwon@gmail.com이 글은 ‘Progressive Web Apps on iOS ar ...
-        
+  
+  
+    <section class="time-section">
+  <h1 class="section-year">
+    2018
+  </h1>
+  <div class="section-list">
+    
+    
+      <div class="section-list-item">
+        <a href="/2018/04/23/progressive-web-app-ios/" class="archive-title">Progressive 웹 앱이 드디어 iOS에서도!</a>
+        <p class="archive-date">04-23</p>
       </div>
-      <a class="more" href="/2018/04/23/progressive-web-app-ios/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2018/04/23/pyenv/">pyenv how-to 정리</a>
-      </h2>
-      <p class="article-date">April 23, 2018</p>
-      
-        
-  <a href="/tags#dev" >
-    <span class="tag-code">dev</span>
-  </a>
-
-      
-      <div class="article-summary">
-        
-          회사에서 apache superset을 분석용도로 커스터마이징해서 비즈니스 유닛이 쓸 수 있도록 개발하고 있다. python 개발은 처음이라 pyenv도 하나도 몰랐는데 문서화하면서 이것저것 배웠다. 개인 목적으로도 pyenv를 쓸 일이 있을 것 같아 블로그에도 ...
-        
+    
+      <div class="section-list-item">
+        <a href="/2018/04/23/pyenv/" class="archive-title">pyenv how-to 정리</a>
+        <p class="archive-date">04-23</p>
       </div>
-      <a class="more" href="/2018/04/23/pyenv/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2018/04/22/hexo-blog-howto/">hexo 블로그 사용법</a>
-      </h2>
-      <p class="article-date">April 22, 2018</p>
-      
-        
-  <a href="/tags#dev" >
-    <span class="tag-code">dev</span>
-  </a>
-
-      
-      <div class="article-summary">
-        
-          한 달전 잠시 만져보고 또 한동안 쓰지 않으니 손에 익지 않아서, 다시 마크다운 문법도 연습하고 공부도 하는 겸 블로그 글을 쓰려고 한다. 그런데 어떻게 글을 발행하려고 하는 것 부터 이미 난관이다. 사람이 어디 적어두지를 않으면 찾고 또 찾고 시간을 낭비할 것 ...
-        
+    
+      <div class="section-list-item">
+        <a href="/2018/04/22/hexo-blog-howto/" class="archive-title">hexo 블로그 사용법</a>
+        <p class="archive-date">04-22</p>
       </div>
-      <a class="more" href="/2018/04/22/hexo-blog-howto/">Read more</a>
-    </article>
-  
-    <article class="article-card">
-      <h2 class="article-head">
-        <a href="/2018/03/21/hello-world/">hello_world</a>
-      </h2>
-      <p class="article-date">March 21, 2018</p>
-      
-        
-  <a href="/tags#personal" >
-    <span class="tag-code">personal</span>
-  </a>
-
-      
-      <div class="article-summary">
-        
-          매번 들어가보는 블로그에 powered by hexo라고 써있어서 호기심에 한번 시작해봤다. 처음엔 뭐야 이거? 하다가 오 나쁘지 않아 오 신기해 오 이걸로 옮겨야겠다! 하고 생각이 들었다. 마음에 드는 테마도 찾아서 좋다. favicon이 신경쓰이고 아직 테마 ...
-        
+    
+      <div class="section-list-item">
+        <a href="/2018/03/21/hello-world/" class="archive-title">hello_world</a>
+        <p class="archive-date">03-21</p>
       </div>
-      <a class="more" href="/2018/03/21/hello-world/">Read more</a>
-    </article>
-  
-
+    
+  </div>
+</section>
   
 </main>
 
-
+<script>
+  (function () {
+    var url = 'http://sophiedophie.github.io/tags/articles/index.html';
+    $('#article-banner').geopattern(url);
+    $('.header').removeClass('fixed-header');
+  })();
+</script>
     <div class="scroll-top">
   <span class="arrow-icon"></span>
 </div>
